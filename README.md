@@ -137,7 +137,7 @@ This code sets up the **badCertificateCallback** callback for the HttpClient obj
 
 **In this case, the callback always returns true, which means that the client will always trust the certificates, even if they cannot be verified. This can be useful in some situations, for example, when working with self-signed certificates or when testing, but in a real environment it can pose a security risk.**
 
-## Redefining global HTTP requests (A route with a certificate)
+## Redefining global HTTP requests (Route without a certificate)
 
 ```
 Future<void> main() async {  
@@ -151,7 +151,7 @@ Future<void> main() async {
   } 
 ...
 ```
-## Setting up a proxy connection (A route with a certificate)
+## Setting up a proxy connection (Route without a certificate)
 
  1. Run mitmproxy
 > mitmweb --ssl-insecure --mode wireguard
