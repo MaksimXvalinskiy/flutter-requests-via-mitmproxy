@@ -1,0 +1,1 @@
+enum RequestPackageType { dio, http }
